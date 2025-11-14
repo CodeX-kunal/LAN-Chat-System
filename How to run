@@ -1,0 +1,101 @@
+Method 1: Running Using ChatLauncher (Recommended)
+
+This is the simplest and cleanest way because the launcher handles starting the server or client.
+
+Step 1: Compile the project
+
+Open a terminal inside your project folder (where .java files exist):
+
+javac ChatServer.java ChatClient.java ChatLauncher.java
+
+Step 2: Run the launcher
+java ChatLauncher
+
+What Happens Next
+
+The launcher will show options such as:
+
+Start Server
+
+Start Client
+
+You simply:
+
+Select Start Server in one terminal
+
+Select Start Client in another terminal (you can open multiple clients)
+
+Advantages
+
+Clean and organized
+
+No need to manually remember which class to run
+
+Easy for users/testers
+
+Single entry point for the entire project
+
+✅ Method 2: Running Each File Manually (Without Launcher)
+
+This is helpful for debugging or if you want to run server and clients independently.
+
+Step 1: Run the Server
+
+Open Terminal 1:
+
+Compile
+javac ChatServer.java
+
+Run
+java ChatServer
+
+
+Server will start and wait for connections.
+
+Step 2: Run the Client
+
+Open Terminal 2:
+
+Compile
+javac ChatClient.java
+
+Run
+java ChatClient
+
+
+If your GUI requires an IP and port, enter:
+
+Server IP: localhost
+
+Port: 5000 (or whatever your server uses)
+
+You can open multiple clients by running the same command in more terminals.
+
+🧪 Optional: Visual Studio Code Method
+Running Server
+
+Open ChatServer.java
+
+Click Run (top-right of VS Code Editor)
+
+Or press Ctrl + F5
+
+Running Client
+
+Right-click the file → Open in Integrated Terminal
+
+Then run:
+
+javac ChatClient.java
+java ChatClient
+
+
+Open multiple terminals for multiple clients:
+
+VS Code top menu → Terminal → New Terminal
+
+📝 Summary Table
+Method	Best For	Commands
+Using ChatLauncher	Normal use, demonstrations	java ChatLauncher
+Manual Server + Client	Debugging, testing	java ChatServer + java ChatClient
+VS Code Run Button	Beginners, GUI users	Click “Run”
